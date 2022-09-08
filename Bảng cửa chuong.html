@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1  > Bảng Cửa Chương </h1>
+<script>
+    let sout;
+    sout="<table style='color: blue'  border='1' width='1000' cellspacing='0' cellpadding='3'>"
+    for ( j=1 ; j<=10 ;j++) {
+        sout = sout + "</tr>";
+        for (i = 2; i <= 9; i++) {
+            sout = sout + "<td>" + i + "x" + j + "=" + i * j + "</td>";
+        }
+        sout = sout + "</tr>";
+    }
+        sout = sout + "</table>";
+        document.write(sout);
+
+</script>
+</body>
+</html>
